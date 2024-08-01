@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="music-player">
+        <div class="left-panel">
+            <h2>Set Your Mood</h2>
+            <div class="mood-settings">
+                <div class="mood-setting">
+                    <label for="mood-sad">Sad Vibes</label>
+                    <input type="range" id="mood-sad" min="0" max="100">
+                </div>
+                <div class="mood-setting">
+                    <label for="mood-calm">Calm</label>
+                    <input type="range" id="mood-calm" min="0" max="100">
+                </div>
+                <div class="mood-setting">
+                    <label for="mood-fast">Fast</label>
+                    <input type="range" id="mood-fast" min="0" max="100">
+                </div>
+                <div class="mood-setting">
+                    <label for="mood-lyrics">Lyrics</label>
+                    <input type="range" id="mood-lyrics" min="0" max="100">
+                </div>
+            </div>
+            <h2>Genre</h2>
+            <div class="genre-buttons">
+                <button class="genre-btn">Metal</button>
+                <button class="genre-btn">Techno</button>
+                <button class="genre-btn">Electronic</button>
+                <button class="genre-btn">House</button>
+                <button class="genre-btn">Blues</button>
+                <button class="genre-btn">Jazz</button>
+            </div>
+            <button class="listen-btn">Listen</button>
+            <h2>Song List</h2>
+            <ul class="song-list">
+                <!-- Songs will be dynamically added here -->
+            </ul>
+        </div>
+        <div class="right-panel">
+            <img src="cover.jpg" alt="Album Cover" class="album-cover">
+            <h2 id="track-title">Track Title</h2>
+            <h3 id="track-artist">Track Artist</h3>
+            <div class="progress-bar">
+                <span id="current-time">1:45</span>
+                <input type="range" id="progress" min="0" max="100">
+                <span id="duration">4:30</span>
+            </div>
+            <div class="controls">
+                <button id="prev-btn">Previous</button>
+                <button id="play-btn">Play</button>
+                <button id="next-btn">Next</button>
+            </div>
+            <div class="lyrics">
+                <p>And now we're full of energy</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
